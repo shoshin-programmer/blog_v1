@@ -41,7 +41,7 @@ export default class Topics extends React.Component {
           <div className="all-topics-container">
             {this.state.topics.map((topic) => (
               <div className="topic-wrap">
-                <img className="topic-img" src={topic.img} />
+                <img className="topic-img" src={topic.img} alt={topic.topic} />
                 <div className="topic-title">{topic.topic}</div>
               </div>
             ))}

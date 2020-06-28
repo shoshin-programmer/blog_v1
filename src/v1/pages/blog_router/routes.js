@@ -23,7 +23,7 @@ export default class BlogRouter extends React.Component {
     );
   }
 }
-
+/*
 function NotFound(props) {
   return (
     <React.Fragment>
@@ -31,3 +31,4 @@ function NotFound(props) {
     </React.Fragment>
   );
 }
+*/
