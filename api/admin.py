@@ -7,11 +7,7 @@ admin.site.register(Tag)
 
 
 class PostAdmin(admin.ModelAdmin):
-    """Administration object for Book models.
-    Defines:
-     - fields to be displayed in list view (list_display)
-     - adds inline addition of book instances in book view (inlines)
-    """
+    """ displays on list the tags and the title """
     list_display = ('title', 'list_tags')
 
 
