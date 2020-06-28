@@ -1,0 +1,94 @@
+.recent-header-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.recent-title {
+  padding-top: 10px;
+  font-size: 4.9em;
+  font-weight: bold;
+  color: #8892b0;
+  text-align: left;
+  line-height: 0.9em;
+  font-family: "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont,
+    Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.recent-post-wrap {
+  padding: 1em;
+}
+.each-recent-post {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+  border-radius: 10px;
+  padding: 10px;
+}
+.each-recent-post {
+  display: flex;
+  flex-direction: column;
+}
+.post-img {
+  height: auto;
+  width: 100%;
+}
+.each-recent-post .post-title {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.each-recent-post .post-category {
+  color: #8892b0;
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+  margin: 10px 0 10px 0;
+}
+
+.each-recent-post .post-text {
+  color: #8892b0;
+  margin-bottom: 2em;
+}
+.each-recent-post .post-date {
+  font-size: 0.8em;
+  background: rgba(0, 0, 0, 0.2);
+}
+.post-container .recent-post-wrap:last-child {
+  margin-bottom: 100px;
+}
+
+/* topic styles */
+.all-topics-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.topic-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 120px;
+  margin: 1em;
+  justify-content: center;
+}
+.topic-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.topic-title {
+  color: #8892b0;
+  margin-top: 10px;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  /* .recent-title { */
+    /* font-size: 8.5em; */
+  /* } */
+}

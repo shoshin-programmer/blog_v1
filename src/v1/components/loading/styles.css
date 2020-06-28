@@ -1,0 +1,22 @@
+.blog-loading-wrap {
+  z-index: 8;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background: #06080a;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    background: transparent;
+  }
+}

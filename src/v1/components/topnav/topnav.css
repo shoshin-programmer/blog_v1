@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap");
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  /* Menu */
+  .menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu-icon {
+    width: 25px;
+    height: 2px;
+    background: #34c3ff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    background: #34c3ff;
+    position: absolute;
+    border-radius: 5px;
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu-icon::before {
+    transform: translate(-13px, 10px);
+    width: 30px;
+  }
+  .menu-icon::after {
+    transform: translate(-13px, -10px);
+    width: 30px;
+  }
+  /* Menu Animation */
+  .menu-btn.menu-open .menu-icon {
+    background: transparent;
+    transform: translateX(-15px);
+  }
+  .menu-btn.menu-open .menu-icon::before {
+    transform: rotate(-225deg);
+  }
+  .menu-btn.menu-open .menu-icon::after {
+    transform: rotate(225deg);
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 3em;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .menu-list li {
+    font-size: 1.2em;
+    padding: 2em;
+    list-style: none;
+  }
+  .menu-list li a {
+    font-family: "Overpass Mono", "PT Mono", "San Francisco", "SF Pro Text",
+      -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      "Segoe UI", Arial, sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #34c3ff;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+  }
+  /* Sidebar on Mobile */
+  .sidebar {
+    top: 0;
+    position: fixed;
+    right: -70%;
+    z-index: 1000;
+    height: 100vh;
+    width: 0;
+    background: #172b46;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .sidebar.sidebar-open {
+    right: 0px;
+    width: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .sidebar {
+    padding: 0;
+    background: transparent;
+    width: 100vw;
+    height: 100px;
+    top: 0;
+    right: 100px;
+  }
+  .menu-list {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+/* Media screen size */
+@media screen and (min-width: 768px) {
+}
