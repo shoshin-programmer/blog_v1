@@ -74,7 +74,7 @@
     width: 860px;
   } */
   .blog-instance {
-    width: 750px;
+    width: 850px;
     align-self: center;
     transform: translateX(50px);
     display: flex;
@@ -86,7 +86,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 280px;
+    width: 220px;
     justify-content: flex-start;
     flex-direction: column;
     padding: 5px;
@@ -109,11 +109,15 @@
   }
 
   .nav-item {
-    width: 190px;
+    width: 120px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
   .nav-item .rs-icon {
-    display: none;
+    font-size: 23px;
   }
 
   .active-blog {

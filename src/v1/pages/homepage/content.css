@@ -99,6 +99,9 @@
     font-size: 0.8em;
     max-width: 90%;
   }
+  .main-my-name {
+    font-size: 80px;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
