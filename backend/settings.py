@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # app where to place my api
-    'api',
+    'blog_api',
     # rest framework library
     'rest_framework',
 ]
