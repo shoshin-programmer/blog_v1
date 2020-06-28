@@ -32,6 +32,12 @@
   height: auto;
   width: 100%;
 }
+.post-img-wrap {
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
 .each-recent-post .post-title {
   font-size: 1.4em;
   margin-bottom: 1em;
