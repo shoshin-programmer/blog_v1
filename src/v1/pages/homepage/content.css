@@ -89,15 +89,15 @@
   .content-1 {
     display: flex;
     justify-content: center;
-    transform: translateX(-10%);
+    transform: translateX(-5%);
   }
   .content-1-text {
-    max-width: 50%;
+    max-width: 70%;
   }
   .main-my-desc {
     margin-top: 10px;
     font-size: 0.8em;
-    max-width: 90%;
+    max-width: 75%;
   }
   .main-my-name {
     font-size: 80px;
