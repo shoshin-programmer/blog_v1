@@ -14,11 +14,11 @@ export default class BlogRouter extends React.Component {
   render() {
     return (
       <Switch>
+        <Route exact path="/blog/" component={RecentPage} />
         <Route exact path="/blog/recent" component={RecentPage} />
         <Route exact path="/blog/top_posts" component={TopPosts} />
         <Route exact path="/blog/topics" component={Topics} />
         <Route exact path="/blog/search" component={Search} />
-        <Route exact path="/blog/*" component={RecentPage} />
       </Switch>
     );
   }

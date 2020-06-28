@@ -52,11 +52,7 @@ export default class Blog extends React.Component {
             </a>
             {this.state.options.map(option => (
               <NavLink to={option.link} activeClassName="active-blog">
-                <li
-                  className={`nav-item ${
-                    this.state.options[0].active ? true : false
-                  }`}
-                >
+                <li className="nav-item">
                   <Icon icon={option.icon} size={"2x"} />
                   <p>{option.title}</p>
                 </li>
