@@ -2,22 +2,12 @@ import React from "react";
 import { Content, Button, Grid } from "rsuite";
 import "rsuite/dist/styles/rsuite-dark.css";
 import "./content.css";
+import About from "./about";
 
 export default class MainContent extends React.Component {
   constructor() {
     super();
-    this.state = {
-      show: true
-    };
-    this.handleLoad = this.handleLoad.bind(this);
-  }
-  handleLoad() {
-    setTimeout(
-      function() {
-        this.setState({ show: false });
-      }.bind(this),
-      1000
-    );
+    this.state = {};
   }
   render() {
     return (
@@ -51,6 +41,7 @@ export default class MainContent extends React.Component {
               </div>
             </Grid>
           </div>
+          <About />
         </Content>
       </React.Fragment>
     );

@@ -21,7 +21,7 @@ export default class TopNav extends React.Component {
             <div className="menu-icon"></div>
           </div>
           <ul className="menu-list">
-            <li><a href="/#">about</a></li>
+            <li><a href="#about-start">about</a></li>
             <li><a href="/#">work</a></li>
             <li><a href="/blog/recent">blog</a></li>
             <li><a href="/#">resume</a></li>

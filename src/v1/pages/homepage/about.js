@@ -1,0 +1,72 @@
+import React from "react";
+import { Button } from "rsuite";
+import "./about.css";
+
+export default function About() {
+  return (
+    <React.Fragment>
+      <div className="about-content">
+        <div id="about-start">
+          <div className="about-title">
+            <a className="about-link" href="#about-start">
+              about
+            </a>
+          </div>
+          <br />
+          <div className="picture-wrap">
+            <img
+              className="profile-picture"
+              src={
+                "https://media-exp1.licdn.com/dms/image/C5103AQEVfJK0GiFKcA/profile-displayphoto-shrink_400_400/0?e=1599091200&v=beta&t=WxJURa3_oZyjsojM-aqJn0c7EjLCIKtwKO6LMScGlag"
+              }
+            />
+          </div>
+          <br />
+          <p className="about-desc">
+            Hi! I am <span style={{ color: "#fff" }}>Arvin Mark Atienza</span>{" "}
+            currently based on BGC Taguig City Philippines.
+          </p>
+          <p className="about-desc">
+            My goal is to provide{" "}
+            <span style={{ color: "#fff" }}>
+              efficient, beautiful and easy-to-use websites
+            </span>{" "}
+            made for everyone that they would love to use.
+            <br />( I also dabble in{" "}
+            <span style={{ color: "#fff" }}>
+              Data Science, Blog Websites, and other things Web.{" "}
+            </span>
+            )
+          </p>
+          <p className="about-desc">
+            Stack I used to make this website along with the blog:
+          </p>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>JavaScript (ES6+)</li>
+          </ul>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
+/*
+<div className="about-list-wrapper">
+  <ul className="about-exp-list">
+    <li>
+      <a href="#about-start">SIP</a>
+    </li>
+    <li>
+      <a href="/#">RingCentral</a>
+    </li>
+    <li>
+      <a href="/blog/recent">ZenRooms</a>
+    </li>
+  </ul>
+</div>
+<div className="about-exp-wrapper"></div>
+*/
