@@ -2,6 +2,7 @@ import React from "react";
 import BlogLoading from "../../../components/loading/loading";
 import "./styles.css";
 import axios from "axios";
+import moment from "moment";
 
 export default class RecentPage extends React.Component {
   constructor() {
@@ -45,8 +46,10 @@ export default class RecentPage extends React.Component {
                 <div className="each-recent-post">
                   <div className="post-category">Topic: {post.topic}</div>
                   <div className="post-title">{post.title}</div>
-                  <div className="post-text">{post.text}</div>
-                  <div className="post-date">{post.last_updated}</div>
+                  <div className="post-text">{post.content}</div>
+                  <div className="post-date">
+                    {moment(post.last_updated).format("LL")}
+                  </div>
                 </div>
               </div>
             ))}
