@@ -14,6 +14,8 @@ class Post(models.Model):
     tag = models.ManyToManyField('Tag', blank=True)
     content = models.TextField(max_length=5000, null=True)
     post_img = models.ImageField(upload_to=get_image_path, blank=True, null=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+    last_updated = models.DateTimeField(auto_now=True)
 
     def list_tags(self):
         """Creates a string for the Tags to view on admin"""

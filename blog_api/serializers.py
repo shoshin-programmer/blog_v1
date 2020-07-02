@@ -21,4 +21,6 @@ class PostSerializer(serializers.ModelSerializer):
             'tag',
             'content',
             'post_img',
+            'date_created',
+            'last_updated',
         )
