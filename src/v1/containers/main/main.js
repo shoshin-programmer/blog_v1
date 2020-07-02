@@ -19,7 +19,6 @@ export default class Main extends React.Component {
     });
   }
   render() {
-
     return (
       <React.Fragment>
         <TopNav />
@@ -39,7 +38,7 @@ export default class Main extends React.Component {
         </div>
         <SideNavigation />
         <div>
-            <MainContent />
+          <MainContent />
         </div>
       </React.Fragment>
     );

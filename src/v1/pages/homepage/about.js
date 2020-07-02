@@ -1,21 +1,21 @@
 import React from "react";
-import { Button } from "rsuite";
 import "./about.css";
 
 export default function About() {
   return (
     <React.Fragment>
-      <div className="about-content">
-        <div id="about-start">
+      <div id="about-container">
+        <div id="about-section">
           <div className="about-title">
             <a className="about-link" href="#about-start">
               about
             </a>
           </div>
           <br />
-          <div className="picture-wrap">
+          <div className="profile-picture-wrap">
             <img
               className="profile-picture"
+              alt="arvin mark atienza"
               src={
                 "https://media-exp1.licdn.com/dms/image/C5103AQEVfJK0GiFKcA/profile-displayphoto-shrink_400_400/0?e=1599091200&v=beta&t=WxJURa3_oZyjsojM-aqJn0c7EjLCIKtwKO6LMScGlag"
               }

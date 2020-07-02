@@ -50,9 +50,9 @@ export default class Blog extends React.Component {
                 <p>BACK</p>
               </li>
             </a>
-            {this.state.options.map(option => (
+            {this.state.options.map((option, index) => (
               <NavLink to={option.link} activeClassName="active-blog">
-                <li className="nav-item">
+                <li className="nav-item" key={index}>
                   <Icon icon={option.icon} size={"2x"} />
                   <p>{option.title}</p>
                 </li>

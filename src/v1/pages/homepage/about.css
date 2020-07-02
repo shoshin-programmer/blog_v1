@@ -1,9 +1,9 @@
 /* About  */
-.about-content {
+#about-container {
   padding: 1em;
   height: 100vh;
 }
-#about-start {
+#about-section {
   margin-top: 20px;
   overflow: hidden;
 }
@@ -61,23 +61,14 @@
   padding: 0.5em;
   letter-spacing: 0.4px;
 }
-.picture-wrap {
+.profile-picture-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.profile-picture {
+
+.profile-picture-wrap .profile-picture {
   border-radius: 20px;
   width: 180px;
   max-height: 170px;
-}
-.picture-wrap::before {
-  position: absolute;
-  content: "";
-  opacity: 0.2;
-  background: #34c3ff;
-  color: #fff;
-  border-radius: 20px;
-  width: 180px;
-  height: 170px;
 }

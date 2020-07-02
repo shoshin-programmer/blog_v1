@@ -28,15 +28,18 @@ export default class SideNavigation extends React.Component {
                 icon: "linkedin"
               },
               { link: "https://twitter.com/mark16940315", icon: "twitter" }
-            ].map(item => (
-              <Nav.Item>
-                <a target="_blank" rel="noopener noreferrer" href={item.link}>
-                  <IconButton
-                    appearance="ghost"
-                    size="sm"
-                    icon={<Icon icon={item.icon} />}
-                  ></IconButton>
-                </a>
+            ].map((item, index) => (
+              <Nav.Item
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={item.link}
+              >
+                <IconButton
+                  appearance="ghost"
+                  size="sm"
+                  icon={<Icon icon={item.icon} />}
+                ></IconButton>
               </Nav.Item>
             ))}
           </Nav>

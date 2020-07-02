@@ -14,7 +14,7 @@ export default class TopPosts extends React.Component {
           title: "Starting with Programming",
           text:
             "Have you decided to be a programmer, or you are just curious about programming? Starting with programming starts with the mindset and the expectations of what you are trying to achieve. ",
-          last_updated: "March 14, 2020",
+          last_updated: "March 14, 2020"
         },
         {
           topic: "algorithms",
@@ -23,9 +23,9 @@ export default class TopPosts extends React.Component {
           title: "Starting with Programming",
           text:
             "Have you decided to be a programmer, or you are just curious about programming? Starting with programming starts with the mindset and the expectations of what you are trying to achieve. ",
-          last_updated: "March 14, 2020",
-        },
-      ],
+          last_updated: "March 14, 2020"
+        }
+      ]
     };
   }
   render() {
@@ -42,8 +42,8 @@ export default class TopPosts extends React.Component {
             </div>
           </div>
           <div className="post-container">
-            {this.state.posts.map((post) => (
-              <div className="recent-post-wrap">
+            {this.state.posts.map((post, index) => (
+              <div className="recent-post-wrap" key={index}>
                 <img src={post.img} className="post-img" alt={post.title} />
                 <div className="each-recent-post">
                   <div className="post-category">Topic: {post.topic}</div>

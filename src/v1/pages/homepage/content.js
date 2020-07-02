@@ -3,6 +3,7 @@ import { Content, Button, Grid } from "rsuite";
 import "rsuite/dist/styles/rsuite-dark.css";
 import "./content.css";
 import About from "./about";
+import Work from "./work";
 
 export default class MainContent extends React.Component {
   constructor() {
@@ -17,10 +18,10 @@ export default class MainContent extends React.Component {
             <Grid fluid className="content-1">
               <div className="content-1-text">
                 <p className="main-my-title">I am</p>
-                <p className="main-my-name">
+                <div className="main-my-name">
                   Mark Atienza.
                   <p className="main-my-title">I automate processes.</p>
-                </p>
+                </div>
                 <br />
                 <p className="main-my-desc">
                   A fulltime web developer based on BGC ( Philippines ) with
@@ -42,6 +43,7 @@ export default class MainContent extends React.Component {
             </Grid>
           </div>
           <About />
+          <Work />
         </Content>
       </React.Fragment>
     );

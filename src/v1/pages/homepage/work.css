@@ -1,0 +1,40 @@
+/* Work  */
+#work-container {
+  padding: 1em;
+  height: 100vh;
+}
+#work-section {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.work-exp-wrap {
+  width: 100vw;
+  padding: 1em;
+}
+.work-exp-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  overflow: scroll;
+}
+.work-exp-list li {
+  font-size: 1em;
+  padding: 2em;
+  list-style: none;
+}
+.work-exp-list li button {
+  background: none;
+  outline: none;
+  font-family: "Overpass Mono", "PT Mono", "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+    "Segoe UI", Arial, sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #34c3ff;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
