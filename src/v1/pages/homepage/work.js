@@ -62,7 +62,7 @@ export default class Work extends React.Component {
         <div id="work-container">
           <div id="work-section">
             <div className="about-title">
-              <a className="about-link" href="#about-start">
+              <a className="about-link" href="#work-container">
                 work experience
               </a>
             </div>

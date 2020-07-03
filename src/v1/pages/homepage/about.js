@@ -7,7 +7,7 @@ export default function About() {
       <div id="about-container">
         <div id="about-section">
           <div className="about-title">
-            <a className="about-link" href="#about-start">
+            <a className="about-link" href="#about-container">
               about
             </a>
           </div>

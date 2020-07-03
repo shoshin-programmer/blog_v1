@@ -4,6 +4,7 @@ import "rsuite/dist/styles/rsuite-dark.css";
 import "./content.css";
 import About from "./about";
 import Work from "./work";
+import Footer from "./footer";
 
 export default class MainContent extends React.Component {
   constructor() {
@@ -44,86 +45,9 @@ export default class MainContent extends React.Component {
           </div>
           <About />
           <Work />
+          <Footer />
         </Content>
       </React.Fragment>
     );
   }
 }
-
-/*
-
-        <Content>
-          <div style={{ height: "100vh", padding: "100px" }}>
-            <Grid fluid style={{ height: "100%", paddingTop: "150px" }}>
-              <Row>
-                <Col md={3} />
-                <Col md={10}>
-                  <div
-                    style={{
-                      textAlign: "left",
-                      fontFamily:
-                        'Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif'
-                    }}
-                  >
-                    <a>I am</a>
-                    <p
-                      style={{
-                        fontSize: "4em",
-                        fontWeight: "bold",
-                        letterSpacing: "1px"
-                      }}
-                    >
-                      Arvin Mark Atienza
-                    </p>
-                    <p
-                      style={{
-                        fontSize: "3em",
-                        fontWeight: "bold",
-                        letterSpacing: "1px",
-                        color: "#8892b0"
-                      }}
-                    >
-                      Fullstack Web Developer
-                    </p>
-                    <br />
-                    <Row>
-                      <Col md={18}>
-                        <p style={{ color: "#8892B0", fontSize: "1.2em" }}>
-                          A web developer specializing on internal automation,
-                          HR systems, web scraping. Sprinkles of design and
-                          process analysis added.{" "}
-                        </p>
-                      </Col>
-                    </Row>
-                    <Button
-                      size="lg"
-                      style={{ marginTop: "50px" }}
-                      appearance="ghost"
-                    >
-                      CONTACT
-                    </Button>
-                  </div>
-                </Col>
-                <Col md={6} mdPull={1}>
-                  <img
-                    src={logo}
-                    height="350px"
-                    height="auto"
-                    alt="shoshin - means beginners mindset"
-                  />
-                  <p
-                    style={{
-                      letterSpacing: "2px",
-                      color: "#8892B0",
-                      marginBottom: "10px"
-                    }}
-                  >
-                    shoshin
-                  </p>
-                </Col>
-                <Col md={5} />
-              </Row>
-            </Grid>
-          </div>
-        </Content>
-*/
