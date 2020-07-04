@@ -29,7 +29,7 @@
   flex-direction: column;
 }
 .post-img {
-  height: auto;
+  height: 200px;
   width: 100%;
 }
 .post-img-wrap {
@@ -48,6 +48,7 @@
   letter-spacing: 0.5px;
   font-size: 0.8em;
   margin: 10px 0 10px 0;
+  overflow: hidden;
 }
 
 .each-recent-post .post-text {
