@@ -1,18 +1,31 @@
 import React from "react";
-import { Redirect, Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import Main from "./v1/containers/main/main";
-import Blog from "./v1/pages/blog/blog";
+import { Switch, Route } from "react-router-dom";
+
+import ROUTES from "./main_routes";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/blog/" component={Blog} />
-        <Redirect from="/blog/*" to="/blog/" />
-      </Switch>
-    </Router>
-  );
+  return <RenderRoutes routes={ROUTES} />;
 }
 
 export default App;
+
+function RouteWithSubRoutes(route) {
+  return (
+    <Route
+      path={route.path}
+      exact={route.exact}
+      render={props => <route.component {...props} routes={route.routes} />}
+    />
+  );
+}
+
+function RenderRoutes({ routes }) {
+  return (
+    <Switch>
+      {routes.map((route, i) => {
+        return <RouteWithSubRoutes key={route.key} {...route} />;
+      })}
+      <Route component={() => <h1>Not Found!</h1>} />
+    </Switch>
+  );
+}

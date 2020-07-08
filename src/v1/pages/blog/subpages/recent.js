@@ -48,7 +48,8 @@ export default class RecentPage extends React.Component {
                     Topic:{" "}
                     {post.tag.map((tag, index) => (
                       <span key={index}>{tag.name}, </span>
-                    ))}{"..."}
+                    ))}
+                    {"..."}
                   </div>
                   <div className="post-title">{post.title}</div>
                   <div className="post-text">{post.content}</div>
