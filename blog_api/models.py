@@ -4,7 +4,7 @@ from django.db import models
 
 # utility functions
 def get_image_path(instance, filename):
-    return os.path.join('photos', str(instance.title), filename)
+    return os.path.join('photos', str(instance.name), filename)
 
 
 # Create your models here.
@@ -25,6 +25,7 @@ class Post(models.Model):
 class Tag(models.Model):
     """Tags or the topic involved of the post/essay"""
     name = models.CharField(max_length=255, null=True)
+    img = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
     def __str__(self):
         return self.name
