@@ -24,4 +24,5 @@ class PostSerializer(serializers.ModelSerializer):
             'post_img',
             'date_created',
             'last_updated',
+            'view_count',
         )

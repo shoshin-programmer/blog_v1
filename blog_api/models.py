@@ -16,6 +16,7 @@ class Post(models.Model):
     post_img = models.ImageField(upload_to=get_image_path, blank=True, null=True)
     date_created = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
+    view_count = models.IntegerField(default=0)
 
     def list_tags(self):
         """Creates a string for the Tags to view on admin"""

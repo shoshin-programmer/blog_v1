@@ -8,11 +8,24 @@ export default class RecentPage extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: []
+      posts: [
+        {
+          title: "",
+          tag: [
+            {
+              name: "",
+              img: ""
+            }
+          ],
+          content: "",
+          post_img: "",
+          view_count: ""
+        }
+      ]
     };
   }
   componentDidMount() {
-    axios.get("http://127.0.0.1:8000/api/post/").then(response => {
+    axios.get("http://127.0.0.1:8000/api/recent_posts").then(response => {
       this.setState({
         posts: response.data
       });
