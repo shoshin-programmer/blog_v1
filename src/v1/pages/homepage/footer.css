@@ -72,3 +72,24 @@
     visibility: hidden;
   }
 }
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #footer-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-title a {
+    font-size: 2em;
+  }
+  .footer-content-wrap {
+    height: 40vh;
+  }
+}
