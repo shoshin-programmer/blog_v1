@@ -109,7 +109,7 @@
 }
 @media (min-width: 961px) {
   #about-container {
-    min-height: 70vh;
+    min-height: 60vh;
     align-items: flex-start;
     padding-top: 100px;
     justify-content: center;

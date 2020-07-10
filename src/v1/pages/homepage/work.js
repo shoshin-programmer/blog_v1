@@ -67,19 +67,21 @@ export default class Work extends React.Component {
               </a>
             </div>
             <br />
-            <div className="work-exp-wrap">
-              <ul className="work-exp-list">
-                {" "}
-                {this.state.companies.map((data, index) => (
-                  <li key={index}>
-                    <button onClick={() => this.selectCompany(data)}>
-                      {data.company_name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+            <div className="work-exp-container">
+              <div className="work-exp-wrap">
+                <ul className="work-exp-list">
+                  {" "}
+                  {this.state.companies.map((data, index) => (
+                    <li key={index}>
+                      <button onClick={() => this.selectCompany(data)}>
+                        {data.company_name}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <WorkDetails data={this.state.experience_details} />
             </div>
-            <WorkDetails data={this.state.experience_details} />
           </div>
         </div>
       </React.Fragment>
@@ -100,7 +102,7 @@ class WorkDetails extends React.Component {
   render() {
     if (this.props.data) {
       return (
-        <div>
+        <div className="work-description-wrap">
           <p>
             {this.props.data.job_title} @ {this.props.data.company_name}
           </p>
