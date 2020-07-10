@@ -1,13 +1,18 @@
 /* About  */
 #about-container {
-  padding: 1em;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 #about-section {
   margin-top: 20px;
   overflow: hidden;
+  padding: 10px;
 }
 
+.about-inner-section {
+  margin-top: 50px;
+}
 .about-title {
   font-family: "Overpass Mono", "PT Mono", "San Francisco", "SF Pro Text",
     -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue",
@@ -19,7 +24,7 @@
 }
 .about-title a {
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 .about-exp-list {
   display: flex;
@@ -71,4 +76,78 @@
   border-radius: 20px;
   width: 180px;
   max-height: 170px;
+}
+
+.stack-list {
+  font-size: 1em;
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #about-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-inner-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .about-desc {
+    font-size: 1.4em;
+  }
+
+  .profile-picture-wrap .profile-picture {
+    margin: 50px 0 50px 0;
+    border-radius: 20px;
+    width: 230px;
+    max-height: 230px;
+  }
+
+  .stack-list {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 961px) {
+  #about-container {
+    min-height: 70vh;
+    align-items: flex-start;
+    padding-top: 100px;
+    justify-content: center;
+  }
+  #about-section {
+    width: 750px;
+  }
+  .about-inner-section {
+    flex-direction: row-reverse;
+  }
+  .description-wrap {
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  #about-container {
+    min-height: 100vh;
+  }
+  #about-section {
+    width: 65%;
+    padding: 0;
+  }
+  .about-inner-section {
+    justify-content: space-around;
+  }
+  .profile-picture-wrap .profile-picture {
+    margin: 50px 0 50px 0;
+    border-radius: 20px;
+    width: 280px;
+    max-height: 280px;
+  }
+  .description-wrap {
+    width: 500px;
+  }
+
+  .about-title a {
+    font-size: 2.5em;
+  }
+
 }
