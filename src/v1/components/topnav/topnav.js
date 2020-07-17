@@ -28,7 +28,10 @@ export default class TopNav extends React.Component {
               <a href="#work-container">work</a>
             </li>
             <li>
-              <a href="/blog/recent">blog</a>
+              <a target= "_blank" href="/blog/recent">blog</a>
+            </li>
+            <li>
+              <a href="#footer-container">contact</a>
             </li>
             <li>
               <a href="/#">resume</a>
