@@ -74,12 +74,10 @@
     width: 860px;
   } */
   .blog-instance {
-    width: 850px;
-    align-self: center;
-    transform: translateX(50px);
+    width: 750px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    margin-left: 80px;
   }
 
   .nav-wrap {
